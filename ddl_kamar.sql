@@ -1,0 +1,15 @@
+INSERT INTO kamar VALUES('Kamar Hotel Regular',0,'Jl. mana saja','0812345678',101,'Standar',725000);
+INSERT INTO kamar VALUES('Kamar Hotel Regular',1,'Jl. apa saja','0812345671',125,'Standar',625000);
+INSERT INTO kamar VALUES('Kamar Hotel Regular',2,'Jl. gitignore','0812345648',130,'Standar',955000);
+INSERT INTO kamar VALUES('Kamar Hotel Regular',3,'Jl. posttmann','0812345466',150,'Standar',125000);
+INSERT INTO kamar VALUES('Kamar Hotel Electron',4,'Jl. chava','0852345462',125,'Standar',925000);
+INSERT INTO kamar VALUES('Kamar Hotel Nopotel',4,'Jl. top','0812345444',200,'Deluxe',1025000);
+INSERT INTO kamar VALUES('Kamar Hotel Nopotel',0,'Jl. mana saja','0812345687',100,'Deluxe',2725000);
+INSERT INTO kamar VALUES('Kamar Hotel Atriva',1,'Jl. apa saja','0812345444',225,'Deluxe',2625000);
+INSERT INTO kamar VALUES('Kamar Hotel Safage',2,'Jl. gitignore','0812345111',325,'Deluxe',1955000);
+INSERT INTO kamar VALUES('Kamar Hotel Hehehe',3,'Jl. posttmann','0812345458',225,'Deluxe',3125000);
+INSERT INTO kamar VALUES('Kamar Hotel Nopotel',4,'Jl. pstree','0812345412',25,'Suite',10000000);
+INSERT INTO kamar VALUES('Kamar Hotel Nopotel',0,'Jl. vanilla javascript','0832345678',10,'Suite',8250000);
+INSERT INTO kamar VALUES('Kamar Hotel Wonderful',1,'Jl. in aja dulu','0872345671',25,'Suite',10625000);
+INSERT INTO kamar VALUES('Kamar Hotel Wonderful',2,'Jl. pycharm','0872345648',25,'Suite',12955000);
+INSERT INTO kamar VALUES('Kamar Hotel Best JS',3,'Jl. seesharp','0822345466',25,'Suite',11125000);
