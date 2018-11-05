@@ -1,4 +1,3 @@
---dieksekusi semuanya untuk DDL dan DML INSERT
 CREATE DATABASE hotelservice;
 USE hotelservice;
 
