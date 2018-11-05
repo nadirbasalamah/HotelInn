@@ -1,4 +1,3 @@
---dieksekusi semuanya untuk DDL dan DML INSERT
 CREATE DATABASE hotelservice;
 USE hotelservice;
 
@@ -26,8 +25,7 @@ CREATE TABLE `ruangan` (
   `kapasitas` INTEGER NOT NULL,
   `harga` int(11) NOT NULL,
   `no_telp` varchar(255) NOT NULL,
-  `alamat` varchar(255) NOT NULL,
-  `no_telp` varchar(255) NOT NULL,
+  `alamat` varchar(255) NOT NULL
 );
 CREATE TABLE `taxi` (
   `no_id` varchar(255) NOT NULL,
