@@ -144,6 +144,7 @@ let kamar = [{
     "jenis_kamar": "Suite",
     "harga_kamar": "11125000"
 }];
+let ruangan = [{"no_id":"1","nama_ruangan":"Wedding","kapasitas":"150","harga":"7500000","no_telp":"085678912345","alamat":"Jl. Jakarta No. 10, Malang"},{"no_id":"2","nama_ruangan":"Wedding","kapasitas":"175","harga":"8750000","no_telp":"081378912345","alamat":"Jl. Bandung No. 11, Surabaya"},{"no_id":"3","nama_ruangan":"Wedding","kapasitas":"200","harga":"1000000","no_telp":"085623412345","alamat":"Jl. Medan No. 12, Kediri"},{"no_id":"4","nama_ruangan":"Meeting","kapasitas":"20","harga":"1500000","no_telp":"089078912345","alamat":"Jl. Jogjakarta No. 13, Samarinda"},{"no_id":"5","nama_ruangan":"Meeting","kapasitas":"40","harga":"3000000","no_telp":"0856789281795","alamat":"Jl. Semarang No. 14, Balikpapan"},{"no_id":"6","nama_ruangan":"Meeting","kapasitas":"10","harga":"750000","no_telp":"081022912345","alamat":"Jl. Solo No. 15, Bontang"},{"no_id":"7","nama_ruangan":"Ballroom","kapasitas":"1000","harga":"50000000","no_telp":"0856789122828345","alamat":"Jl. Bandung No. 16, Makassar"},{"no_id":"8","nama_ruangan":"Ballroom","kapasitas":"800","harga":"40000000","no_telp":"08178912345","alamat":"Jl. Bogor No. 17, Pare"},{"no_id":"9","nama_ruangan":"Ballroom","kapasitas":"900","harga":"45000000","no_telp":"0818178912345","alamat":"Jl. Cirebon No. 18, Palu"},{"no_id":"10","nama_ruangan":"Graduation","kapasitas":"300","harga":"9000000","no_telp":"085610112345","alamat":"Jl. Denpasar No. 10, Banjarmasin"},{"no_id":"11","nama_ruangan":"Graduation","kapasitas":"250","harga":"7500000","no_telp":"08342448912345","alamat":"Jl. Badung No. 10, Nganjuk"},{"no_id":"12","nama_ruangan":"Graduation","kapasitas":"150","harga":"600000","no_telp":"0111178912345","alamat":"Jl. Papua No. 10, Madiun"},{"no_id":"13","nama_ruangan":"Serbaguna","kapasitas":"100","harga":"7500000","no_telp":"085678912345","alamat":"Jl. Jakarta No. 10, Malang"},{"no_id":"14","nama_ruangan":"Serbaguna","kapasitas":"80","harga":"6000000","no_telp":"085678912345","alamat":"Jl. Papua No. 10, Surabaya"},{"no_id":"15","nama_ruangan":"Serbaguna","kapasitas":"70","harga":"50000000","no_telp":"085678912345","alamat":"Jl. Bandung No. 19, Kediri"}];
 var Application = {
     initApplication  :function () {
         $(window).load('pageinit','#page-kamar',function () {
@@ -152,12 +153,22 @@ var Application = {
         $(document).on('click','#kamar',function () {
             Application.initShowKamar();
         })
+		$(document).on('click','#ruangan',function () {
+            Application.initShowRuangan();
+        })
     },
     initShowKamar : function () {
         for (let index = 0; index < kamar.length; index++) {
              var appendList = '<li><a href=#><h2>'+kamar[index].nama+
              '</h2><p>'+kamar[index].alamat+'</p><p><b>'+kamar[index].no_telp+'</b></p></a></li>;'
              $('#list-kamar').append(appendList);    
+        }
+    },
+	initShowRuangan : function () {
+        for (let index = 0; index < ruangan.length; index++) {
+             var appendList = '<li><a href=#><h2>'+ruangan[index].nama_ruangan+
+             '</h2><p>'+ruangan[index].alamat+'</p><p><b>'+ruangan[index].no_telp+'</b></p></a></li>;'
+             $('#list-ruangan').append(appendList);    
         }
     }
 };
