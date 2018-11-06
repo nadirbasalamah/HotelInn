@@ -156,6 +156,9 @@ var Application = {
 		$(document).on('click','#ruangan',function () {
             Application.initShowRuangan();
         })
+        $(document).on('click','#tambahdatakmr',function () {
+            Application.addDataKamar();
+        })
     },
     initShowKamar : function () {
         for (let index = 0; index < kamar.length; index++) {
@@ -170,5 +173,25 @@ var Application = {
              '</h2><p>'+ruangan[index].alamat+'</p><p><b>'+ruangan[index].no_telp+'</b></p></a></li>;'
              $('#list-ruangan').append(appendList);    
         }
+    },
+    addDataKamar : function () {
+        let no_id = 16;
+        no_id++;
+        var nama = document.getElementById("nama").value;
+        var alamat = document.getElementById("alamat").value;
+        var no_telp = document.getElementById("notelp").value;
+        var jumkmr = document.getElementById("jumkmr").value;
+        var jenkmr = document.getElementById("jenkmr").value;
+        var harga = document.getElementById("harga").value;
+        kamar.push({
+            "nama": nama,
+            "no_id": no_id,
+            "alamat": alamat,
+            "no_telp": no_telp,
+            "jumlah_kamar": jumkmr,
+            "jenis_kamar": jenkmr,
+            "harga_kamar": harga
+        });
+        alert("Data berhasil ditambahkan!");
     }
 };

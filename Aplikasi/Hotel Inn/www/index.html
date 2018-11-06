@@ -40,7 +40,7 @@
                     <div data-role="header" data-theme="b">
                         <h1>Cari kamar hotel</h1>
                         <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
-                        <a href="#" data-icon="plus" class="ui-btn-right">Tambah</a>
+                        <a href="#page-tambah-kamar" data-icon="plus" class="ui-btn-right">Tambah</a>
                     </div><!-- /header -->
                     <div role="main" class="ui-content">
                         <ul id="list-kamar" data-role="listview" data-inset="true" data-filter="true">
@@ -165,6 +165,41 @@
                                                 </ul>
                                     </div><!-- /panel -->
                                 </div><!--aboutapp-->
+                                <div data-role="page" id="page-tambah-kamar">
+                                    <div data-role="header" data-theme="b">
+                                        <h1>Tambah data kamar</h1>
+                                        <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+                                    </div><!-- /header -->
+                                    <div role="main" class="ui-content">
+                                        <form action="" method="post">
+                                                <label for="nama">Nama :</label>
+                                                <input type="text" name="nama" id="nama" value="">
+                                                <label for="alamat">Alamat :</label>
+                                                <input type="text" name="alamat" id="alamat" value="">
+                                                <label for="notelp">Nomor telepon :</label>
+                                                <input type="text" name="notelp" id="notelp" value="">
+                                                <label for="jumkmr">Jumlah kamar :</label>
+                                                <input type="number" name="jumkmr" id="jumkmr" value="">
+                                                <label for="jenkmr">Jenis kamar :</label>
+                                                <input type="text" name="jenkmr" id="jenkmr" value="">
+                                                <label for="harga">Harga kamar :</label>
+                                                <input type="number" name="harga" id="harga" value="">
+                                                <button type="submit" class="ui-shadow ui-btn ui-corner-all" id="tambahdatakmr">Unggah</button>
+                                        </form>                                       
+                                    </div><!-- /content -->
+                                    <div data-role="panel" id="left-panel" data-theme="b">                        
+                                            <ul data-role="listview">
+                                                    <li><a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right">Tutup</a></li>
+                                                    <li><a href="#demo-page">Beranda</a></li>
+                                                    <li id="kamar"><a href="#page-kamar">Cari kamar</a></li>
+                                                    <li id="restoran"><a href="#page-restoran">Cari restoran</a></li>
+                                                    <li id="ruangan"><a href="#page-ruangan">Cari ruangan</a></li>
+                                                    <li id="taksi"><a href="#page-taksi">Cari taksi</a></li>
+                                                    <li id="laundry"><a href="#page-laundry">Cari laundry</a></li>
+                                                    <li><a href="#about-page">Tentang aplikasi</a></li>
+                                                </ul>
+                                    </div><!-- /panel -->
+                                </div><!--page-taksi-->
     <script type="text/javascript" src="cordova.js"></script>
     <script>Application.initApplication();</script>
 </body>
