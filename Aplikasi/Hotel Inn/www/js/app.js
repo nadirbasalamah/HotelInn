@@ -149,6 +149,9 @@ var Application = {
         $(window).load('pageinit','#page-kamar',function () {
             Application.initShowKamar();
         })
+        $(document).on('click','#kamar',function () {
+            Application.initShowKamar();
+        })
     },
     initShowKamar : function () {
         for (let index = 0; index < kamar.length; index++) {
