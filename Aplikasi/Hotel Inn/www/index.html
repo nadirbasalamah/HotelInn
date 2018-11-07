@@ -83,6 +83,7 @@
                             <div data-role="header" data-theme="b">
                                 <h1>Cari ruangan</h1>
                                 <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+                                <a href="#page-tambah-ruangan" data-icon="plus" class="ui-btn-right">Tambah</a>
                             </div><!-- /header -->
                             <div role="main" class="ui-content">
 							<ul id="list-ruangan" data-role="listview" data-inset="true" data-filter="true">
@@ -200,6 +201,38 @@
                                                 </ul>
                                     </div><!-- /panel -->
                                 </div><!--page-taksi-->
+                                <div data-role="page" id="page-tambah-ruangan">
+                                        <div data-role="header" data-theme="b">
+                                            <h1>Tambah Data Ruangan</h1>
+                                            <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+                                        </div><!-- /header -->
+                                        <div role="main" class="ui-content">
+                                        <form action="" method="post">
+                                        <label for="nama ruangan">Nama :</label>
+                                        <input type="text" name="nama" id="nama_ruangan" value="">
+                                        <label for="kapasitas">Kapasitas :</label>
+                                        <input type="Number" name="kapasitas" id="kapasitas_ruangan" value="">
+                                        <label for="harga">Harga :</label>
+                                        <input type="Number" name="harga" id="harga_ruangan" value="">
+                                        <label for="telp">Nomor Telp :</label>
+                                        <input type="Number" name="telp" id="telp_ruangan" value="">
+                                        <label for="alamat">Alamat :</label>
+                                        <input type="text" name="alamat" id="alamat_ruangan" value="">
+                                        <button type="submit" class="ui-shadow ui-btn ui-corner-all" id="tambahdataruang">Unggah</button>
+                                        </div><!-- /content -->
+                                        <div data-role="panel" id="left-panel" data-theme="b">                        
+                                                <ul data-role="listview">
+                                                        <li><a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right">Tutup</a></li>
+                                                        <li><a href="#demo-page">Beranda</a></li>
+                                                        <li id="kamar"><a href="#page-kamar">Cari kamar</a></li>
+                                                        <li id="restoran"><a href="#page-restoran">Cari restoran</a></li>
+                                                        <li id="ruangan"><a href="#page-ruangan">Cari ruangan</a></li>
+                                                        <li id="taksi"><a href="#page-taksi">Cari taksi</a></li>
+                                                        <li id="laundry"><a href="#page-laundry">Cari laundry</a></li>
+                                                        <li><a href="#about-page">Tentang aplikasi</a></li>
+                                                    </ul>
+                                        </div><!-- /panel -->
+                                    </div><!--aboutapp-->
     <script type="text/javascript" src="cordova.js"></script>
     <script>Application.initApplication();</script>
 </body>

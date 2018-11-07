@@ -159,18 +159,21 @@ var Application = {
         $(document).on('click','#tambahdatakmr',function () {
             Application.addDataKamar();
         })
+        $(document).on('click','#tambahdataruang',function () {
+            Application.addDataRuangan();
+        })
     },
     initShowKamar : function () {
         for (let index = 0; index < kamar.length; index++) {
              var appendList = '<li><a href=#><h2>'+kamar[index].nama+
-             '</h2><p>'+kamar[index].alamat+'</p><p><b>'+kamar[index].no_telp+'</b></p></a></li>;'
+             '</h2><p>'+kamar[index].alamat+'</p><p><b>'+kamar[index].no_telp+'</b></p></a></li>'
              $('#list-kamar').append(appendList);    
         }
     },
 	initShowRuangan : function () {
         for (let index = 0; index < ruangan.length; index++) {
              var appendList = '<li><a href=#><h2>'+ruangan[index].nama_ruangan+
-             '</h2><p>'+ruangan[index].alamat+'</p><p><b>'+ruangan[index].no_telp+'</b></p></a></li>;'
+             '</h2><p>'+ruangan[index].alamat+'</p><p><b>'+ruangan[index].no_telp+'</b></p></a></li>'
              $('#list-ruangan').append(appendList);    
         }
     },
@@ -192,6 +195,17 @@ var Application = {
             "jenis_kamar": jenkmr,
             "harga_kamar": harga
         });
+        alert("Data berhasil ditambahkan!");
+    },
+    addDataRuangan : function () {
+        let no_id = 16;
+        no_id++;
+        var nama = document.getElementById("nama_ruangan").value;
+        var kapasitas = document.getElementById("kapasitas_ruangan").value;
+        var harga = document.getElementById("harga_ruangan").value;
+        var no_telp = document.getElementById("telp_ruangan").value;
+        var alamat = document.getElementById("alamat_ruangan").value;
+        ruangan.push({"no_id": no_id,"nama_ruangan":nama,"kapasitas":kapasitas ,"harga":harga, "no_telp": no_telp, "alamat": alamat});
         alert("Data berhasil ditambahkan!");
     }
 };
