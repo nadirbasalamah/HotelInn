@@ -251,6 +251,248 @@ let laundry = [{
     harga: "2000"
     }
     ];
+var restoran = [
+    {
+    no_id: "1",
+    nama_restoran: "Kelapa Kuning",
+    alamat: "Jl. Kelapa Kuning No. 5, Kota Tangerang",
+    no_telp: "81234567891",
+    kapasitas: "50",
+    jenis_paket: "Standar",
+    harga_restoran: "400000"
+    },
+    {
+    no_id: "2",
+    nama_restoran: "Kelapa Kuning",
+    alamat: "Jl. Kelapa Kuning No. 5, Kota Tangerang",
+    no_telp: "81234567891",
+    kapasitas: "100",
+    jenis_paket: "Deluxe",
+    harga_restoran: "800000"
+    },
+    {
+    no_id: "3",
+    nama_restoran: "Kelapa Kuning",
+    alamat: "Jl. Kelapa Kuning No. 5, Kota Tangerang",
+    no_telp: "81234567891",
+    kapasitas: "150",
+    jenis_paket: "Premium",
+    harga_restoran: "1250000"
+    },
+    {
+    no_id: "4",
+    nama_restoran: "Nusa Indah",
+    alamat: "Jl. Nusa Bangsa No. 11, Kota Malang",
+    no_telp: "82345678912",
+    kapasitas: "100",
+    jenis_paket: "Standar",
+    harga_restoran: "1000000"
+    },
+    {
+    no_id: "5",
+    nama_restoran: "Nusa Indah",
+    alamat: "Jl. Nusa Bangsa No. 11, Kota Malang",
+    no_telp: "82345678912",
+    kapasitas: "200",
+    jenis_paket: "Deluxe",
+    harga_restoran: "2000000"
+    },
+    {
+    no_id: "6",
+    nama_restoran: "Nusa Indah",
+    alamat: "Jl. Nusa Bangsa No. 11, Kota Malang",
+    no_telp: "82345678912",
+    kapasitas: "300",
+    jenis_paket: "Premium",
+    harga_restoran: "2750000"
+    },
+    {
+    no_id: "7",
+    nama_restoran: "Dapur Oma",
+    alamat: "Jl. Patimura No. 29, Kota Jember",
+    no_telp: "83456789123",
+    kapasitas: "30",
+    jenis_paket: "Standar",
+    harga_restoran: "200000"
+    },
+    {
+    no_id: "8",
+    nama_restoran: "Dapur Oma",
+    alamat: "Jl. Patimura No. 29, Kota Jember",
+    no_telp: "83456789123",
+    kapasitas: "50",
+    jenis_paket: "Deluxe",
+    harga_restoran: "450000"
+    },
+    {
+    no_id: "9",
+    nama_restoran: "Dapur Oma",
+    alamat: "Jl. Patimura No. 29, Kota Jember",
+    no_telp: "83456789123",
+    kapasitas: "80",
+    jenis_paket: "Premium",
+    harga_restoran: "725000"
+    },
+    {
+    no_id: "10",
+    nama_restoran: "Mang Hasan",
+    alamat: "Jl. Tanjung Burung No. 38, Kabupaten Tangerang",
+    no_telp: "84567891234",
+    kapasitas: "30",
+    jenis_paket: "Standar",
+    harga_restoran: "350000"
+    },
+    {
+    no_id: "11",
+    nama_restoran: "Mang Hasan",
+    alamat: "Jl. Tanjung Burung No. 38, Kabupaten Tangerang",
+    no_telp: "84567891234",
+    kapasitas: "40",
+    jenis_paket: "Deluxe",
+    harga_restoran: "450000"
+    },
+    {
+    no_id: "12",
+    nama_restoran: "Mang Hasan",
+    alamat: "Jl. Tanjung Burung No. 38, Kabupaten Tangerang",
+    no_telp: "84567891234",
+    kapasitas: "60",
+    jenis_paket: "Premium",
+    harga_restoran: "600000"
+    },
+    {
+    no_id: "13",
+    nama_restoran: "Menega Cafe",
+    alamat: "Jl. Jimbaran No. 38, Bali",
+    no_telp: "85678912345",
+    kapasitas: "50",
+    jenis_paket: "Standar",
+    harga_restoran: "650000"
+    },
+    {
+    no_id: "14",
+    nama_restoran: "Menega Cafe",
+    alamat: "Jl. Jimbaran No. 38, Bali",
+    no_telp: "85678912345",
+    kapasitas: "100",
+    jenis_paket: "Deluxe",
+    harga_restoran: "1200000"
+    },
+    {
+    no_id: "15",
+    nama_restoran: "Menega Cafe",
+    alamat: "Jl. Jimbaran No. 38, Bali",
+    no_telp: "85678912345",
+    kapasitas: "150",
+    jenis_paket: "Premium",
+    harga_restoran: "1800000"
+    }
+    ];
+var taksi =  [{
+    no_id: "1",
+    nama_taxi: "Blue Bird",
+    kapasitas: "20",
+    no_telp: "08522669987871",
+    harga: "150000"
+    },
+    {
+    no_id: "2",
+    nama_taxi: "Angkasapura",
+    kapasitas: "15",
+    no_telp: "087448112850",
+    harga: "120000"
+    },
+    {
+    no_id: "3",
+    nama_taxi: "Adi Raya",
+    kapasitas: "17",
+    no_telp: "0831454871045",
+    harga: "105000"
+    },
+    {
+    no_id: "4",
+    nama_taxi: "Cipgans",
+    kapasitas: "15",
+    no_telp: "0831354871045",
+    harga: "100000"
+    },
+    {
+    no_id: "5",
+    nama_taxi: "Citr",
+    kapasitas: "18",
+    no_telp: "0831454871045",
+    harga: "115000"
+    },
+    {
+    no_id: "6",
+    nama_taxi: "APS",
+    kapasitas: "10",
+    no_telp: "0831454871045",
+    harga: "125000"
+    },
+    {
+    no_id: "7",
+    nama_taxi: "DRS",
+    kapasitas: "18",
+    no_telp: "0831454871045",
+    harga: "135000"
+    },
+    {
+    no_id: "8",
+    nama_taxi: "Smrat",
+    kapasitas: "11",
+    no_telp: "0831454871045",
+    harga: "145000"
+    },
+    {
+    no_id: "9",
+    nama_taxi: "Runn",
+    kapasitas: "11",
+    no_telp: "0831454871045",
+    harga: "155000"
+    },
+    {
+    no_id: "10",
+    nama_taxi: "Yellowish",
+    kapasitas: "20",
+    no_telp: "0831454871045",
+    harga: "165000"
+    },
+    {
+    no_id: "11",
+    nama_taxi: "Bronze Bird",
+    kapasitas: "22",
+    no_telp: "0831454871045",
+    harga: "200000"
+    },
+    {
+    no_id: "12",
+    nama_taxi: "Bro",
+    kapasitas: "11",
+    no_telp: "0831454871045",
+    harga: "110000"
+    },
+    {
+    no_id: "13",
+    nama_taxi: "Taxxi",
+    kapasitas: "15",
+    no_telp: "0831454871045",
+    harga: "150000"
+    },
+    {
+    no_id: "14",
+    nama_taxi: "Cabs",
+    kapasitas: "17",
+    no_telp: "0831454871045",
+    harga: "120000"
+    },
+    {
+    no_id: "15",
+    nama_taxi: "Cabzz",
+    kapasitas: "20",
+    no_telp: "0831454871045",
+    harga: "150000"
+    }];
 var Application = {
     initApplication  :function () {
         $(window).load('pageinit','#page-kamar',function () {
@@ -274,6 +516,12 @@ var Application = {
         $(document).on('click','#tambahdatalaundry',function () {
             Application.addDataLaundry();
         })
+        $(document).on('click','#restoran',function () {
+            Application.initShowRestoran();
+        })
+        $(document).on('click','#taksi',function () {
+            Application.initShowTaksi();
+        })
     },
     initShowKamar : function () {
         for (let index = 0; index < kamar.length; index++) {
@@ -294,6 +542,20 @@ var Application = {
              var appendList = '<li><a href=#><h2>'+laundry[index].nama_laundry+
              '</h2><p>'+laundry[index].alamat+'</p><p><b>'+laundry[index].no_telp+'</b></p></a></li>'
              $('#list-laundry').append(appendList);    
+        }
+    },
+    initShowRestoran : function () {
+        for (let index = 0; index < restoran.length; index++) {
+             var appendList = '<li><a href=#><h2>'+restoran[index].nama_restoran+
+             '</h2><p>'+restoran[index].alamat+'</p><p><b>'+restoran[index].no_telp+'</b></p></a></li>'
+             $('#list-restoran').append(appendList);    
+        }
+    },
+    initShowTaksi : function () {
+        for (let index = 0; index < taksi.length; index++) {
+             var appendList = '<li><a href=#><h2>'+taksi[index].nama_taxi+
+             '</h2><p>'+taksi[index].kapasitas+'</p><p><b>'+taksi[index].no_telp+'</b></p></a></li>'
+             $('#list-taksi').append(appendList);    
         }
     },
     addDataKamar : function () {
