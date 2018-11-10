@@ -519,6 +519,9 @@ var Application = {
         $(document).on('click','#restoran',function () {
             Application.initShowRestoran();
         })
+	$(document).on('click','#tambahdatarestoran',function () {
+            Application.addDataRestoran();
+        })
         $(document).on('click','#taksi',function () {
             Application.initShowTaksi();
         })
