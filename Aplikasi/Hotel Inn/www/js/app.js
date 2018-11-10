@@ -598,5 +598,24 @@ var Application = {
         var alamat = document.getElementById("alamat_laundry").value;
         laundry.push({"no_id": no_id,"nama_laundry":nama,"harga":harga, "no_telp": no_telp, "alamat": alamat});
         alert("Data berhasil ditambahkan!");
+    },
+	addDataRestoran : function () {
+        let no_id = 16;
+        no_id++;
+        var nama = document.getElementById("nama_restoran").value;
+        var kapasitas = document.getElementById("kapasitas_restoran").value;
+        var harga = document.getElementById("harga_restoran").value;
+        var no_telp = document.getElementById("notelp_restoran").value;
+        var alamat = document.getElementById("alamat_restoran").value;
+		var jenpkt = document.getElementById("jenpkt").value;
+        ruangan.push({
+			"no_id": no_id,
+			"nama_restoran":nama,
+			"alamat": alamat,
+			"no_telp": no_telp,
+			"kapasitas":kapasitas,  
+			"jenis_paket": jenpkt,
+			"harga":harga});
+        alert("Data berhasil ditambahkan!");
     }
 };
