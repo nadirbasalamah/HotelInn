@@ -267,6 +267,41 @@
                                                 </ul>
                                     </div><!-- /panel -->
                                 </div><!--tambahlaundry-->
+				<div data-role="page" id="page-tambah-restoran">
+                                    <div data-role="header" data-theme="b">
+                                        <h1>Tambah data restoran</h1>
+                                        <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+                                    </div><!-- /header -->
+                                    <div role="main" class="ui-content">
+                                        <form action="" method="post">
+                                                <label for="nama">Nama :</label>
+                                                <input type="text" name="nama" id="nama_restoran" value="">
+                                                <label for="alamat">Alamat :</label>
+                                                <input type="text" name="alamat" id="alamat_restoran" value="">
+                                                <label for="notelp">Nomor telepon :</label>
+                                                <input type="text" name="notelp" id="notelp_restoran" value="">
+                                                <label for="kapasitas">Kapasitas :</label>
+                                                <input type="number" name="kapasitas" id="kapasitas_restoran" value="">
+                                                <label for="jenpkt">Jenis paket :</label>
+                                                <input type="text" name="jenpkt" id="jenpkt" value="">
+                                                <label for="harga">Harga restoran :</label>
+                                                <input type="number" name="harga" id="harga_restoran" value="">
+                                                <button type="submit" class="ui-shadow ui-btn ui-corner-all" id="tambahdatakmr">Unggah</button>
+                                        </form>                                       
+                                    </div><!-- /content -->
+                                    <div data-role="panel" id="left-panel" data-theme="b">                        
+                                            <ul data-role="listview">
+                                                    <li><a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right">Tutup</a></li>
+                                                    <li><a href="#demo-page">Beranda</a></li>
+                                                    <li id="kamar"><a href="#page-kamar">Cari kamar</a></li>
+                                                    <li id="restoran"><a href="#page-restoran">Cari restoran</a></li>
+                                                    <li id="ruangan"><a href="#page-ruangan">Cari ruangan</a></li>
+                                                    <li id="taksi"><a href="#page-taksi">Cari taksi</a></li>
+                                                    <li id="laundry"><a href="#page-laundry">Cari laundry</a></li>
+                                                    <li><a href="#about-page">Tentang aplikasi</a></li>
+                                                </ul>
+                                    </div><!-- /panel -->
+                                </div><!--page-tambah-restoran-->
     <script type="text/javascript" src="cordova.js"></script>
     <script>Application.initApplication();</script>
 </body>
