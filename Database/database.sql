@@ -41,3 +41,9 @@ CREATE TABLE `laundry` (
   `no_telp` varchar(255) NOT NULL,
   `harga` int(11) NOT NULL
 );
+--tambahkan kolom gambar utk semua tabel
+ALTER TABLE `kamar` ADD `gambar` TEXT NOT NULL AFTER `harga_kamar`;
+ALTER TABLE `restoran` ADD `gambar_restoran` TEXT NOT NULL AFTER `harga_restoran`;
+ALTER TABLE `ruangan` ADD `gambar_ruangan` TEXT NOT NULL AFTER `alamat`;
+ALTER TABLE `taxi` ADD `gambar_taxi` TEXT NOT NULL AFTER `harga`;
+ALTER TABLE `laundry` ADD `gambar_laundry` TEXT NOT NULL AFTER `harga`;
