@@ -9,6 +9,6 @@
 	$rstarr[] = $ROW;
 	}
 	header('Content-Type:application/json;charset=utf-8');
-	ECHO JSON_ENCODE( $rstarr);echo"\n";
+	ECHO JSON_ENCODE( $rstarr);
 	MYSQLI_CLOSE($conn);
 ?>

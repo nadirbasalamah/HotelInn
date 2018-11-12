@@ -3,7 +3,6 @@ REQUIRE_ONCE('koneksi.php');
 $QUERY = MYSQLI_QUERY($conn,
 "SELECT * FROM KAMAR"
 );
-$data_kamar[] = "";
 while($kmr = MYSQLI_FETCH_ASSOC($QUERY))
 {
     $data_kamar[] = $kmr;    

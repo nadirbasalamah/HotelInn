@@ -9,6 +9,6 @@
 	$rgnarr[] = $ROW;
 	}
 	header('Content-Type:application/json;charset=utf-8');
-	ECHO JSON_ENCODE( $rgnarr);echo"\n";
+	ECHO JSON_ENCODE( $rgnarr);
 	MYSQLI_CLOSE($conn);
 ?>
