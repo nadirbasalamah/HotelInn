@@ -37,6 +37,18 @@ var Application = {
             var id = $(this).data('restoran');
             Application.initShowDetailRestoran(id);
         })
+	$(document).on('click','#detail-ruangan',function () {
+            var id = $(this).data('ruangan');
+            Application.initShowDetailRuangan(id);
+        })
+	$(document).on('click','#detail-taksi',function () {
+            var id = $(this).data('taksi');
+            Application.initShowDetailTaksi(id);
+        })
+	$(document).on('click','#detail-laundry',function () {
+            var id = $(this).data('laundry');
+            Application.initShowDetailLaundry(id);
+        })
     },
     initShowKamar : function () {
         $.ajax({
@@ -66,7 +78,30 @@ var Application = {
         });
     },
 	initShowRuangan : function () {
-        
+        $.ajax({
+            url:"https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_ruangan.php",
+            type: "get",
+            dataType: "json",
+            beforeSend : function () {
+                $.mobile.loading('show',{
+                    text : 'Please wait while retrieving data...',
+                    textVisible : true
+                });
+            },
+            success : function (data) {
+                var appendList = "";
+                for (let index = 0; index < data.length; index++) {
+                    appendList += '<li><a href=page-detail-ruangan?id='+data[index].no_id+
+                    '" target="_self" id="detail-ruangan" data-ruangan="'+data[index].no_id+'"><h2>'+data[index].nama_ruangan+
+                    '</h2><p>'+data[index].alamat+'</p><p><b>'+data[index].no_telp+'</b></p></a></li>'       
+                }
+             $('#list-ruangan').append(appendList); 
+             $('#list-ruangan').listview('refresh'); 
+            },
+            complete : function () {
+                $.mobile.loading('hide');
+            }
+        });
     },
     initShowLaundry : function () {
         $.ajax({
@@ -111,7 +146,6 @@ var Application = {
                     appendList += '<li><a href=page-detail-restoran?id='+data[index].no_id+
                     '" target="_self" id="detail-restoran" data-restoran="'+data[index].no_id+'"><h2>'+data[index].nama_restoran+
                     '</h2><p>'+data[index].alamat+'</p><p><b>'+data[index].no_telp+'</b></p></a></li>'       
-                    
                 }
              $('#list-restoran').append(appendList); 
              $('#list-restoran').listview('refresh'); 
@@ -122,7 +156,30 @@ var Application = {
         });
     },
     initShowTaksi : function () {
-        
+        $.ajax({
+            url:"https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_taxi.php",
+            type: "get",
+            dataType: "json",
+            beforeSend : function () {
+                $.mobile.loading('show',{
+                    text : 'Please wait while retrieving data...',
+                    textVisible : true
+                });
+            },
+            success : function (data) {
+                var appendList = "";
+                for (let index = 0; index < data.length; index++) {
+                    appendList += '<li><a href=page-detail-taxi?id='+data[index].no_id+
+                    '" target="_self" id="detail-taxi" data-taxi="'+data[index].no_id+'"><h2>'+data[index].nama_taxi+
+                    '</h2><p>'+data[index].no_telp+'</p><p><b>'+data[index].harga+'</b></p></a></li>'
+                }
+             $('#list-restoran').append(appendList); 
+             $('#list-restoran').listview('refresh'); 
+            },
+            complete : function () {
+                $.mobile.loading('hide');
+            }
+        });
     },
     initShowDetailKamar : function (id) {
         
