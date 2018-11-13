@@ -32,7 +32,7 @@ var Application = {
 
     },
     initShowKamar : function () {
-
+        
     },
 	initShowRuangan : function () {
         
