@@ -69,7 +69,30 @@ var Application = {
         
     },
     initShowLaundry : function () {
-        
+        $.ajax({
+            url:"https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_laundry.php",
+            type: "get",
+            dataType: "json",
+            beforeSend : function () {
+                $.mobile.loading('show',{
+                    text : 'Please wait while retrieving data...',
+                    textVisible : true
+                });
+            },
+            success : function (data) {
+                var appendList = "";
+                for (let index = 0; index < data.length; index++) {
+                    appendList += '<li><a href=page-detail-laundry?id='+data[index].no_id+
+                    '" target="_self" id="detail-laundry" data-laundry="'+data[index].no_id+'"><h2>'+data[index].nama_laundry+
+                    '</h2><p>'+data[index].alamat+'</p><p><b>'+data[index].no_telp+'</b></p></a></li>'       
+                }
+             $('#list-laundry').append(appendList); 
+             $('#list-laundry').listview('refresh'); 
+            },
+            complete : function () {
+                $.mobile.loading('hide');
+            }
+        });
     },
     initShowRestoran : function () {
         $.ajax({
