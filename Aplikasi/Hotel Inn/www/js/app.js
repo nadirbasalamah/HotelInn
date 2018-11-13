@@ -72,7 +72,6 @@ var Application = {
         
     },
     initShowRestoran : function () {
-        initShowRestoran : function () {
         $.ajax({
             url:"https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_restoran.php",
             type: "get",
@@ -105,4 +104,16 @@ var Application = {
     initShowDetailKamar : function (id) {
         
     },
+    initShowDetailRestoran : function (id) {
+        
+    },
+    initShowDetailRuangan : function (id) {
+        
+    },
+    initShowDetailTaksi : function (id) {
+        
+    },
+    initShowDetailLaundry : function (id) {
+        
+    }
 };
