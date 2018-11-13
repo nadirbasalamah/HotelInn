@@ -40,7 +40,6 @@
                     <div data-role="header" data-theme="b">
                         <h1>Cari kamar hotel</h1>
                         <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
-                        <a href="#page-tambah-kamar" data-icon="plus" class="ui-btn-right">Tambah</a>
                     </div><!-- /header -->
                     <div role="main" class="ui-content">
                         <ul id="list-kamar" data-role="listview" data-inset="true" data-filter="true">
@@ -63,7 +62,7 @@
                         <div data-role="header" data-theme="b">
                             <h1>Cari restoran</h1>
                             <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
-							<a href="#page-tambah-restoran" data-icon="plus" class="ui-btn-right">Tambah</a>
+							
                         </div><!-- /header -->
                         <div role="main" class="ui-content">
 							<ul id="list-restoran" data-role="listview" data-inset="true" data-filter="true"></ul>
@@ -85,7 +84,7 @@
                             <div data-role="header" data-theme="b">
                                 <h1>Cari ruangan</h1>
                                 <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
-                                <a href="#page-tambah-ruangan" data-icon="plus" class="ui-btn-right">Tambah</a>
+                                
                             </div><!-- /header -->
                             <div role="main" class="ui-content">
 							<ul id="list-ruangan" data-role="listview" data-inset="true" data-filter="true">
@@ -129,7 +128,6 @@
                                     <div data-role="header" data-theme="b">
                                         <h1>Cari laundry</h1>
                                         <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
-                                        <a href="#page-tambah-laundry" data-icon="plus" class="ui-btn-right">Tambah</a>
                                     </div><!-- /header -->
                                     <div role="main" class="ui-content">
                                             <ul id="list-laundry" data-role="listview" data-inset="true" data-filter="true"></ul>
@@ -171,27 +169,12 @@
                                                 </ul>
                                     </div><!-- /panel -->
                                 </div><!--aboutapp-->
-                                <div data-role="page" id="page-tambah-kamar">
+                                <div data-role="page" id="page-detail-kamar">
                                     <div data-role="header" data-theme="b">
-                                        <h1>Tambah data kamar</h1>
+                                        <h1>Detail Kamar</h1>
                                         <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
                                     </div><!-- /header -->
-                                    <div role="main" class="ui-content">
-                                        <form action="" method="post">
-                                                <label for="nama">Nama :</label>
-                                                <input type="text" name="nama" id="nama" value="">
-                                                <label for="alamat">Alamat :</label>
-                                                <input type="text" name="alamat" id="alamat" value="">
-                                                <label for="notelp">Nomor telepon :</label>
-                                                <input type="text" name="notelp" id="notelp" value="">
-                                                <label for="jumkmr">Jumlah kamar :</label>
-                                                <input type="number" name="jumkmr" id="jumkmr" value="">
-                                                <label for="jenkmr">Jenis kamar :</label>
-                                                <input type="text" name="jenkmr" id="jenkmr" value="">
-                                                <label for="harga">Harga kamar :</label>
-                                                <input type="number" name="harga" id="harga" value="">
-                                                <button type="submit" class="ui-shadow ui-btn ui-corner-all" id="tambahdatakmr">Unggah</button>
-                                        </form>                                       
+                                    <div role="main" class="ui-content">                
                                     </div><!-- /content -->
                                     <div data-role="panel" id="left-panel" data-theme="b">                        
                                             <ul data-role="listview">
@@ -206,24 +189,12 @@
                                                 </ul>
                                     </div><!-- /panel -->
                                 </div><!--page-taksi-->
-                                <div data-role="page" id="page-tambah-ruangan">
+                                <div data-role="page" id="page-detail-ruangan">
                                         <div data-role="header" data-theme="b">
-                                            <h1>Tambah Data Ruangan</h1>
+                                            <h1>Detail Ruangan</h1>
                                             <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
                                         </div><!-- /header -->
                                         <div role="main" class="ui-content">
-                                        <form action="" method="post">
-                                        <label for="nama ruangan">Nama :</label>
-                                        <input type="text" name="nama" id="nama_ruangan" value="">
-                                        <label for="kapasitas">Kapasitas :</label>
-                                        <input type="Number" name="kapasitas" id="kapasitas_ruangan" value="">
-                                        <label for="harga">Harga :</label>
-                                        <input type="Number" name="harga" id="harga_ruangan" value="">
-                                        <label for="telp">Nomor Telp :</label>
-                                        <input type="Number" name="telp" id="telp_ruangan" value="">
-                                        <label for="alamat">Alamat :</label>
-                                        <input type="text" name="alamat" id="alamat_ruangan" value="">
-                                        <button type="submit" class="ui-shadow ui-btn ui-corner-all" id="tambahdataruang">Unggah</button>
                                         </div><!-- /content -->
                                         <div data-role="panel" id="left-panel" data-theme="b">                        
                                                 <ul data-role="listview">
@@ -238,22 +209,12 @@
                                                     </ul>
                                         </div><!-- /panel -->
                                     </div><!--aboutapp-->
-                                <div data-role="page" id="page-tambah-laundry">
+                                <div data-role="page" id="page-detail-laundry">
                                     <div data-role="header" data-theme="b">
-                                        <h1>Tambah Data Laundry</h1>
+                                        <h1>Detail Laundry</h1>
                                         <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
                                     </div><!-- /header -->
                                     <div role="main" class="ui-content">
-                                    <form action="" method="post">
-                                    <label for="nama_laundry">Nama :</label>
-                                    <input type="text" name="nama_laundry" id="nama_laundry" value="">
-                                    <label for="harga">Harga :</label>
-                                    <input type="Number" name="harga" id="harga_laundry" value="">
-                                    <label for="telp">Nomor Telp :</label>
-                                    <input type="Number" name="telp" id="telp_laundry" value="">
-                                    <label for="alamat">Alamat :</label>
-                                    <input type="text" name="alamat" id="alamat_laundry" value="">
-                                    <button type="submit" class="ui-shadow ui-btn ui-corner-all" id="tambahdatalaundry">Unggah</button>
                                     </div><!-- /content -->
                                     <div data-role="panel" id="left-panel" data-theme="b">                        
                                             <ul data-role="listview">
@@ -268,27 +229,12 @@
                                                 </ul>
                                     </div><!-- /panel -->
                                 </div><!--tambahlaundry-->
-				<div data-role="page" id="page-tambah-restoran">
+				<div data-role="page" id="page-detail-restoran">
                                     <div data-role="header" data-theme="b">
-                                        <h1>Tambah data restoran</h1>
+                                        <h1>Detail Restoran</h1>
                                         <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
                                     </div><!-- /header -->
                                     <div role="main" class="ui-content">
-                                        <form action="" method="post">
-                                                <label for="nama">Nama :</label>
-                                                <input type="text" name="nama" id="nama_restoran" value="">
-                                                <label for="alamat">Alamat :</label>
-                                                <input type="text" name="alamat" id="alamat_restoran" value="">
-                                                <label for="notelp">Nomor telepon :</label>
-                                                <input type="text" name="notelp" id="notelp_restoran" value="">
-                                                <label for="kapasitas">Kapasitas :</label>
-                                                <input type="number" name="kapasitas" id="kapasitas_restoran" value="">
-                                                <label for="jenpkt">Jenis paket :</label>
-                                                <input type="text" name="jenpkt" id="jenpkt" value="">
-                                                <label for="harga">Harga restoran :</label>
-                                                <input type="number" name="harga" id="harga_restoran" value="">
-                                                <button type="submit" class="ui-shadow ui-btn ui-corner-all" id="tambahdatarestoran">Unggah</button>
-                                        </form>                                       
                                     </div><!-- /content -->
                                     <div data-role="panel" id="left-panel" data-theme="b">                        
                                             <ul data-role="listview">
@@ -302,7 +248,27 @@
                                                     <li><a href="#about-page">Tentang aplikasi</a></li>
                                                 </ul>
                                     </div><!-- /panel -->
-                                </div><!--page-tambah-restoran-->
+                                </div>
+                                <div data-role="page" id="page-detail-taksi">
+                                    <div data-role="header" data-theme="b">
+                                        <h1>Detail Taksi</h1>
+                                        <a href="#left-panel" data-icon="carat-r" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon">Open left panel</a>
+                                    </div><!-- /header -->
+                                    <div role="main" class="ui-content">
+                                    </div><!-- /content -->
+                                    <div data-role="panel" id="left-panel" data-theme="b">                        
+                                            <ul data-role="listview">
+                                                    <li><a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-left ui-btn-right">Tutup</a></li>
+                                                    <li><a href="#demo-page">Beranda</a></li>
+                                                    <li id="kamar"><a href="#page-kamar">Cari kamar</a></li>
+                                                    <li id="restoran"><a href="#page-restoran">Cari restoran</a></li>
+                                                    <li id="ruangan"><a href="#page-ruangan">Cari ruangan</a></li>
+                                                    <li id="taksi"><a href="#page-taksi">Cari taksi</a></li>
+                                                    <li id="laundry"><a href="#page-laundry">Cari laundry</a></li>
+                                                    <li><a href="#about-page">Tentang aplikasi</a></li>
+                                                </ul>
+                                    </div><!-- /panel -->
+                                </div><!--aboutapp-->
     <script type="text/javascript" src="cordova.js"></script>
     <script>Application.initApplication();</script>
 </body>
