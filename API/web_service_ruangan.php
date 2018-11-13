@@ -1,7 +1,7 @@
 <?php
 	REQUIRE_ONCE('koneksi.php');
 	$QUERY = MYSQLI_QUERY($conn,
-	"SELECT * FROM RUANGAN"
+	"SELECT * FROM ruangan"
 	);
 	$rgnarr = [];
 	$rgn = new stdClass;
@@ -9,6 +9,6 @@
 	$rgnarr[] = $ROW;
 	}
 	header('Content-Type:application/json;charset=utf-8');
-	ECHO JSON_ENCODE( $rgnarr);
+	ECHO JSON_ENCODE($rgnarr);
 	MYSQLI_CLOSE($conn);
 ?>

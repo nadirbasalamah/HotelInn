@@ -1,7 +1,7 @@
 <?php
 	REQUIRE_ONCE('koneksi.php');
 	$QUERY = MYSQLI_QUERY($conn,
-	"SELECT * FROM RESTORAN"
+	"SELECT * FROM restoran"
 	);
 	$rstarr = [];
 	$rst = new stdClass;
@@ -9,6 +9,6 @@
 	$rstarr[] = $ROW;
 	}
 	header('Content-Type:application/json;charset=utf-8');
-	ECHO JSON_ENCODE( $rstarr);
+	ECHO JSON_ENCODE($rstarr);
 	MYSQLI_CLOSE($conn);
 ?>
