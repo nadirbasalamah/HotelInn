@@ -70,7 +70,7 @@ var Application = {
                     
                 }
              $('#list-kamar').append(appendList); 
-             $('#list-kamar').listview('refresh'); 
+             $('#list-kamar').listview().listview('refresh'); 
             },
             complete : function () {
                 $.mobile.loading('hide');
@@ -207,7 +207,7 @@ var Application = {
                 $('#p-notelp_kamar').append('<b>Nomor Telepon  : </b>'+obj.no_telp);
                 $('#p-jumlah_kamar').append('<b>Jumlah kamar : </b>'+obj.jumlah_kamar);
                 $('#p-jenis_kamar').append('<b>Jenis kamar   : </b>'+obj.jenis_kamar);
-                $('#p-harga_kamar').append('<b>Harga kamar     : </b>'+obj.harga_kamar);
+                $('#p-harga_kamar').append('<b>Harga kamar     : Rp</b>'+obj.harga_kamar);
             },
             complete  :function () {
                 $.mobile.loading('hide');
@@ -239,8 +239,8 @@ var Application = {
                 $('#p-alamat_restoran').append('<b>Alamat     : </b>'+obj.alamat);
                 $('#p-notelp_restoran').append('<b>Nomor Telepon  : </b>'+obj.no_telp);
                 $('#p-kapasitas_restoran').append('<b>Kapasitas : </b>'+obj.kapasitas);
-                $('#p-jenis_paket').append('<b>Jenis paket   : </b>'+obj.jenis_paket);
-                $('#p-harga_restoran').append('<b>Harga restoran     : </b>'+obj.harga_restoran);
+                $('#p-jenis_restoran').append('<b>Jenis paket   : </b>'+obj.jenis_paket);
+                $('#p-harga_restoran').append('<b>Harga restoran     : Rp</b>'+obj.harga_restoran);
             },
             complete  :function () {
                 $.mobile.loading('hide');
@@ -270,7 +270,7 @@ var Application = {
                 $('#gambar-ruangan').attr("src",obj.gambar_ruangan);
                 $('#p-nama_ruangan').append('<b>Nama      : </b>'+obj.nama_ruangan);
                 $('#p-kapasitas_ruangan').append('<b>Kapasitas     : </b>'+obj.kapasitas);
-                $('#p-harga_ruangan').append('<b>Harga ruangan     : </b>'+obj.harga);
+                $('#p-harga_ruangan').append('<b>Harga ruangan     : Rp</b>'+obj.harga);
                 $('#p-notelp_ruangan').append('<b>Nomor Telepon  : </b>'+obj.no_telp);
                 $('#p-alamat_ruangan').append('<b>Alamat : </b>'+obj.alamat);  
             },
@@ -303,7 +303,7 @@ var Application = {
                 $('#p-nama_taksi').append('<b>Nama      : </b>'+obj.nama_taxi);
                 $('#p-kapasitas_taksi').append('<b>Kapasitas     : </b>'+obj.kapasitas);
                 $('#p-notelp_taksi').append('<b>Nomor Telepon  : </b>'+obj.no_telp);
-                $('#p-harga_taksi').append('<b>Harga Taksi : </b>'+obj.harga);
+                $('#p-harga_taksi').append('<b>Harga Taksi : Rp</b>'+obj.harga);
             },
             complete  :function () {
                 $.mobile.loading('hide');
@@ -334,7 +334,7 @@ var Application = {
                 $('#p-nama_laundry').append('<b>Nama      : </b>'+obj.nama_laundry);
                 $('#p-alamat_laundry').append('<b>Alamat     : </b>'+obj.alamat);
                 $('#p-notelp_laundry').append('<b>Nomor Telepon  : </b>'+obj.no_telp);
-                $('#p-harga_laundry').append('<b>Harga     : </b>'+obj.harga);
+                $('#p-harga_laundry').append('<b>Harga     : Rp</b>'+obj.harga);
             },
             complete  :function () {
                 $.mobile.loading('hide');
