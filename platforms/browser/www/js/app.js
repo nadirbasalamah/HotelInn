@@ -52,7 +52,7 @@ var Application = {
     },
     initShowKamar : function () {
         $.ajax({
-            url:"https://api.myjson.com/bins/p5x86",
+            url:"https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_kamar.php",
             type: "get",
             dataType: "json",
             beforeSend : function () {
@@ -79,7 +79,7 @@ var Application = {
     },
 	initShowRuangan : function () {
         $.ajax({
-            url:"https://api.myjson.com/bins/kzvzq",
+            url:"https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_ruangan.php",
             type: "get",
             dataType: "json",
             beforeSend : function () {
@@ -105,7 +105,7 @@ var Application = {
     },
     initShowLaundry : function () {
         $.ajax({
-            url:"https://api.myjson.com/bins/gtura",
+            url:"https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_laundry.php",
             type: "get",
             dataType: "json",
             beforeSend : function () {
@@ -131,7 +131,7 @@ var Application = {
     },
     initShowRestoran : function () {
         $.ajax({
-            url:"https://api.myjson.com/bins/prcty",
+            url:"https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_restoran.php",
             type: "get",
             dataType: "json",
             beforeSend : function () {
@@ -157,7 +157,7 @@ var Application = {
     },
     initShowTaksi : function () {
         $.ajax({
-            url:"https://api.myjson.com/bins/aa33q",
+            url:"https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_taxi.php",
             type: "get",
             dataType: "json",
             beforeSend : function () {
@@ -183,7 +183,7 @@ var Application = {
     },
     initShowDetailKamar : function (id) {
         $.ajax({
-            url : 'https://api.myjson.com/bins/p5x86',
+            url : 'https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_kamar.php',
             type : 'get',
             dataType: "json",
             beforeSend : function () {
@@ -216,7 +216,7 @@ var Application = {
     },
     initShowDetailRestoran : function (id) {
         $.ajax({
-            url : 'https://api.myjson.com/bins/prcty',
+            url : 'https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_restoran.php',
             type : 'get',
             dataType: "json",
             beforeSend : function () {
@@ -249,7 +249,7 @@ var Application = {
     },
     initShowDetailRuangan : function (id) {
         $.ajax({
-            url : 'https://api.myjson.com/bins/kzvzq',
+            url : 'https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_ruangan.php',
             type : 'get',
             dataType: "json",
             beforeSend : function () {
@@ -281,7 +281,7 @@ var Application = {
     },
     initShowDetailTaksi : function (id) {
         $.ajax({
-            url : 'https://api.myjson.com/bins/aa33q',
+            url : 'https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_taxi.php',
             type : 'get',
             dataType: "json",
             beforeSend : function () {
@@ -312,7 +312,7 @@ var Application = {
     },
     initShowDetailLaundry : function (id) {
         $.ajax({
-            url : 'https://api.myjson.com/bins/gtura',
+            url : 'https://nadir008basalamah.000webhostapp.com/Hotelinn/web_service_laundry.php',
             type : 'get',
             dataType: "json",
             beforeSend : function () {
